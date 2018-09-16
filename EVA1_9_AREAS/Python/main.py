@@ -1,0 +1,10 @@
+print("Área de un trapecio. Introduzca los datos.")
+print("Base mayor:")
+rBaMa = float(input())
+print("Base Menor:")
+rBaMe = float(input())
+print("Altura:")
+rAlt = float(input())
+rArea = (rBaMa + rBaMe) / 2 * rAlt
+print("Area = ", end='', flush=True)
+print(rArea)
