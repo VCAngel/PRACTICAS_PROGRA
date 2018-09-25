@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-23 09:28:26 p. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTA5LTIzOzA5OjIxOjMwIHAuIG0uOzMxMjM="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTA5LTIzOzA5OjI4OjI2IHAuIG0uOzI7MzI0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iDato, iVal" type="Integer" array="False" size=""/>
+            <declare name="sCade" type="String" array="False" size=""/>
+            <assign variable="iDato" expression="10.5"/>
+            <output expression="iDato" newline="True"/>
+            <assign variable="iVal" expression="10"/>
+            <assign variable="sCade" expression="&quot;Hola Mundo&quot;"/>
+            <output expression="sCade" newline="True"/>
+            <output expression="PI" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

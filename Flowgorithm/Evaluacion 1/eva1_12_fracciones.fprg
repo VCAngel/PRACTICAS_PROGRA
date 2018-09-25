@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-23 04:19:20 p. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTA5LTE3OzA3OjUxOjU5IHAuIG0uOzMxMzg="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTA5LTIzOzA0OjE5OjIwIHAuIG0uOzM7MzIzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="INum1, iDen1, iNum2, iDen2, iCNSum, iCNRes, iCNPro, iCNDiv, iCDDiv, iCD" type="Integer" array="False" size=""/>
+            <output expression="&quot;Numerador 1 = &quot;" newline="False"/>
+            <input variable="iNum1"/>
+            <output expression="&quot;Denominador 1 = &quot;" newline="False"/>
+            <input variable="iDen1"/>
+            <output expression="&quot;Numerador 2 = &quot;" newline="False"/>
+            <input variable="iNum2"/>
+            <output expression="&quot;Denominador 2 = &quot;" newline="False"/>
+            <input variable="iDen2"/>
+            <assign variable="iCNSum" expression="((iNum1 * iDen2) + (iDen1 * iNum2))"/>
+            <assign variable="iCNRes" expression="((iNum1 * iDen2) - (iDen1 * iNum2))"/>
+            <assign variable="iCNPro" expression="(iNum1 * iNum2)"/>
+            <assign variable="iCNDiv" expression="(iNum1 * iDen2)"/>
+            <assign variable="iCDDiv" expression="(iNum2 * iDen1)"/>
+            <assign variable="iCD" expression="(iDen1 * iDen2)"/>
+            <output expression="iNum1" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iDen1" newline="False"/>
+            <output expression="&quot; + &quot;" newline="False"/>
+            <output expression="iNum2" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iDen2" newline="False"/>
+            <output expression="&quot; = &quot;" newline="False"/>
+            <output expression="iCNSum" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iCD" newline="True"/>
+            <output expression="iNum1" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iDen1" newline="False"/>
+            <output expression="&quot; - &quot;" newline="False"/>
+            <output expression="iNum2" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iDen2" newline="False"/>
+            <output expression="&quot; = &quot;" newline="False"/>
+            <output expression="iCNRes" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iCD" newline="True"/>
+            <output expression="iNum1" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iDen1" newline="False"/>
+            <output expression="&quot; * &quot;" newline="False"/>
+            <output expression="iNum2" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iDen2" newline="False"/>
+            <output expression="&quot; = &quot;" newline="False"/>
+            <output expression="iCNPro" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iCD" newline="True"/>
+            <output expression="iNum1" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iDen1" newline="False"/>
+            <output expression="&quot; / &quot;" newline="False"/>
+            <output expression="iNum2" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iDen2" newline="False"/>
+            <output expression="&quot; = &quot;" newline="False"/>
+            <output expression="iCNDiv" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="iCDDiv" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

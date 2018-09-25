@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-13 09:19:40 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0wOS0xMzswOTowMDoyMSBhLiBtLjsyOTM5"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0wOS0xMzswOToxOTo0MCBhLiBtLjsxOzMwNTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#193;rea de un trapecio. Introduzca los datos.&quot;" newline="True"/>
+            <declare name="rBaMa, rBaMe, rAlt, rArea" type="Real" array="False" size=""/>
+            <output expression="&quot;Base mayor:&quot;" newline="True"/>
+            <input variable="rBaMa"/>
+            <output expression="&quot;Base Menor:&quot;" newline="True"/>
+            <input variable="rBaMe"/>
+            <output expression="&quot;Altura:&quot;" newline="True"/>
+            <input variable="rAlt"/>
+            <assign variable="rArea" expression="((rBaMa + rBaMe)/2)*rAlt"/>
+            <output expression="&quot;Area = &quot;" newline="False"/>
+            <output expression="rArea" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

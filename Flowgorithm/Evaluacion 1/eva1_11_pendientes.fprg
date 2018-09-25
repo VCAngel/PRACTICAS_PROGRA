@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-14 09:51:09 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0wOS0xNDswOToxMDo1OCBhLiBtLjsyOTUx"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0wOS0xNDswOTo1MTowOSBhLiBtLjsxOzMwNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Calcular f&#243;rmula de la pendiente. Introduce los datos.&quot;" newline="True"/>
+            <declare name="rx1, rx2, ry1, ry2, rM" type="Real" array="False" size=""/>
+            <output expression="&quot;x1 = ?&quot;" newline="True"/>
+            <input variable="rx1"/>
+            <output expression="&quot;x2 = ?&quot;" newline="True"/>
+            <input variable="rx2"/>
+            <output expression="&quot;y1 = ?&quot;" newline="True"/>
+            <input variable="ry1"/>
+            <output expression="&quot;y2 = ?&quot;" newline="True"/>
+            <input variable="ry2"/>
+            <assign variable="rM" expression="(ry2 -ry1)/(rx2-rx1)"/>
+            <output expression="&quot;M = &quot;" newline="False"/>
+            <output expression="rM" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-19 09:44:04 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0wOS0xOTswODo1MDozMCBhLiBtLjsyOTQ5"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0wOS0xOTswOTo0NDowNCBhLiBtLjs0OzMwNjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Qu&#233; calificaci&#243;n obtuviste en Fundamentos de programaci&#243;n:&quot;" newline="True"/>
+            <declare name="rCal" type="Real" array="False" size=""/>
+            <input variable="rCal"/>
+            <output expression="&quot;Tu calificaci&#243;n es: &quot;" newline="False"/>
+            <output expression="rCal" newline="True"/>
+            <if expression="rCal &gt;= 70">
+                <then>
+                    <output expression="&quot;&#161;Aprobaste!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Nos vemos en segunda oportunidad&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
