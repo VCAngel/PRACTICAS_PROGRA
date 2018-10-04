@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-03 09:35:00 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0wMzswOToyNDozNSBhLiBtLjsyOTQx"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0wMzswOTozNTowMCBhLiBtLjs0OzMwNDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;Cuantos a&#241;os tienes?&quot;" newline="True"/>
+            <declare name="iEdad" type="Integer" array="False" size=""/>
+            <input variable="iEdad"/>
+            <output expression="&quot;&#191;Tienes INE?&quot;" newline="True"/>
+            <declare name="bINE" type="Boolean" array="False" size=""/>
+            <input variable="bINE"/>
+            <if expression="iEdad &gt;= 18">
+                <then>
+                    <if expression="bINE == true">
+                        <then>
+                            <output expression="&quot;P&#225;sale we&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;No puedes entrar bato&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;No puedes entrar bato&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
