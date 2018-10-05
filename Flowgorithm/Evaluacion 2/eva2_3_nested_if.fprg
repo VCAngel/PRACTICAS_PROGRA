@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-04 09:36:18 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0wNDswOTowOTozMiBhLiBtLjsyOTQy"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0wNDswOTozNjoxOCBhLiBtLjszOzMwNTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;INTRODUCE TU CALIFICACI&#211;N&quot;" newline="True"/>
+            <declare name="iCali" type="Integer" array="False" size=""/>
+            <input variable="iCali"/>
+            <if expression="iCali = 100">
+                <then>
+                    <output expression="&quot;Sacaste A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="iCali = 90">
+                        <then>
+                            <output expression="&quot;Sacaste B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="iCali = 80">
+                                <then>
+                                    <output expression="&quot;Sacaste C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="iCali = 70">
+                                        <then>
+                                            <output expression="&quot;Sacaste D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="iCali = 60">
+                                                <then>
+                                                    <output expression="&quot;Sacaste F&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Calificiaci&#243;n fuera de rango&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
