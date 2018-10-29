@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-17 09:30:33 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xNzswOToyNDoyMiBhLiBtLjsyOTQy"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xNzswOTozMDozMyBhLiBtLjsxOzMwNDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Materias, Servicio, Residencias" type="Boolean" array="False" size=""/>
+            <assign variable="Materias" expression="true"/>
+            <assign variable="Servicio" expression="true"/>
+            <assign variable="Residencias" expression="true"/>
+            <if expression="(Materias &amp;&amp; Servicio &amp;&amp; Residencias) == true">
+                <then>
+                    <output expression="&quot;TE PUEDES TITULAR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;NO TE PUEDES TITULAR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-19 09:10:09 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xOTswOTowNjozMSBhLiBtLjsyOTQ0"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xOTswOToxMDowOSBhLiBtLjsxOzMwNTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iNum, iMod" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce un n&#250;mero: &quot;" newline="True"/>
+            <input variable="iNum"/>
+            <assign variable="iMod" expression="iNum % 2"/>
+            <if expression="iMod == 0">
+                <then>
+                    <output expression="&quot;N&#250;mero par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#250;mero Impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

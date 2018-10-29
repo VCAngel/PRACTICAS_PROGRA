@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-19 09:06:24 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xOTswOTowMTo1MSBhLiBtLjsyOTQx"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xOTswOTowNjoyNCBhLiBtLjsxOzMwNTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iNum1, iNum2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce el primer n&#250;mero: &quot;" newline="True"/>
+            <input variable="iNum1"/>
+            <output expression="&quot;Introduce el segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="iNum2"/>
+            <if expression="iNum1 == iNum2">
+                <then>
+                    <output expression="&quot;Son n&#250;meros iguales&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No son n&#250;meros iguales&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

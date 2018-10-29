@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-19 09:25:49 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xOTswOToyMTo1NyBhLiBtLjsyOTQ5"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xOTswOToyNTo0OSBhLiBtLjsxOzMwNjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iX, iY" type="Integer" array="False" size=""/>
+            <output expression="&quot;Coordenada en X = &quot;" newline="True"/>
+            <input variable="iX"/>
+            <output expression="&quot;Coordenada en Y = &quot;" newline="True"/>
+            <input variable="iY"/>
+            <if expression="iX &gt; 0 &amp;&amp; iY &gt; 0">
+                <then>
+                    <output expression="&quot;Coordenadas del Cuadrante 1&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="iX &lt; 0 &amp;&amp; iY &gt; 0">
+                        <then>
+                            <output expression="&quot;Coordenadas del Cuadrante 2&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="iX &lt; 0 &amp;&amp; iY &lt; 0">
+                                <then>
+                                    <output expression="&quot;Coordenadas del Cuadrante 3&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="iX &gt; 0 &amp;&amp; iY &lt; 0">
+                                        <then>
+                                            <output expression="&quot;Coordenadas del Cuadrante 4&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

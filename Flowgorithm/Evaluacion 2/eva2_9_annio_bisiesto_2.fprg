@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-17 09:54:22 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xNzswOTozOTowMyBhLiBtLjsyOTQ3"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xNzswOTo1NDoyMiBhLiBtLjs1OzMwNTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iAnnio, iResi4, iResi100, iResi400" type="Integer" array="False" size=""/>
+            <output expression="&quot;INGRESE UN A&#209;O&quot;" newline="True"/>
+            <input variable="iAnnio"/>
+            <assign variable="iResi4" expression="iAnnio % 4"/>
+            <assign variable="iResi100" expression="iAnnio % 100"/>
+            <assign variable="iResi400" expression="iAnnio % 400"/>
+            <if expression="(iResi4 == 0) &amp;&amp; ((iResi100 != 0) || (iResi400 == 0))">
+                <then>
+                    <output expression="&quot;BISIESTO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;NO ES BISIESTO&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

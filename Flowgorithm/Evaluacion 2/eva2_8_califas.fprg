@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-28 05:27:24 p. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA1OjE5OjMwIHAuIG0uOzMxMjM="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA1OjI3OjI0IHAuIG0uOzI7MzIzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Introduce tu calificaci&#243;n&quot;" newline="True"/>
+            <declare name="sCali" type="String" array="False" size=""/>
+            <input variable="sCali"/>
+            <if expression="sCali == &quot;A&quot;">
+                <then>
+                    <output expression="&quot;100&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sCali == &quot;B&quot;">
+                        <then>
+                            <output expression="&quot;90&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="sCali == &quot;C&quot;">
+                                <then>
+                                    <output expression="&quot;80&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="sCali == &quot;D&quot;">
+                                        <then>
+                                            <output expression="&quot;70&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="sCali == &quot;F&quot;">
+                                                <then>
+                                                    <output expression="&quot;0&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Introduce un valor v&#225;lido&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

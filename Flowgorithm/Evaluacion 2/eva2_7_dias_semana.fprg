@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-28 05:10:41 p. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA1OjA0OjM4IHAuIG0uOzMxMjU="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA1OjA1OjI4IHAuIG0uOzE7dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0wODswOTowNTowOSBhLiBtLjtldmEyXzVfbWVzZXNfYW5uaW8uZnByZzs4NTUy"/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA1OjEwOjQxIHAuIG0uOzM7MzIyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Introduce un n&#250;mero de d&#237;a de la semana&quot;" newline="True"/>
+            <declare name="iDia" type="Integer" array="False" size=""/>
+            <input variable="iDia"/>
+            <if expression="iDia = 1">
+                <then>
+                    <output expression="&quot;Domingo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="iDia = 2">
+                        <then>
+                            <output expression="&quot;Lunes&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="iDia = 3">
+                                <then>
+                                    <output expression="&quot;Martes&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="iDia = 4">
+                                        <then>
+                                            <output expression="&quot;Miercoles&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="iDia = 5">
+                                                <then>
+                                                    <output expression="&quot;Jueves&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="iDia = 6">
+                                                        <then>
+                                                            <output expression="&quot;Viernes&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="iDia = 7">
+                                                                <then>
+                                                                    <output expression="&quot;S&#225;bado&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;D&#237;a de la semana inexistente&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

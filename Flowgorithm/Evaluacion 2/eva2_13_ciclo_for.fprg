@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-25 09:36:10 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDc7MjAxOC0xMC0yNTswOToyMTo0NyBhLiBtLjsyOTQ5"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDc7MjAxOC0xMC0yNTswOTozNjoxMCBhLiBtLjsxOzMwNTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iCont" type="Integer" array="False" size=""/>
+            <for variable="iCont" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Angel Vargas Casavantes&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

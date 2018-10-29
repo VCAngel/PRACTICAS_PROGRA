@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-28 08:17:00 p. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA4OjAxOjU5IHAuIG0uOzMxMjg="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA4OjE3OjAwIHAuIG0uOzE7MzIyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iSumaEdad, iSum" type="Integer" array="False" size=""/>
+            <assign variable="iSumaEdad" expression="0"/>
+            <output expression="&quot;Edad 1: &quot;" newline="True"/>
+            <input variable="iSum"/>
+            <assign variable="iSumaEdad" expression="iSumaEdad + iSum"/>
+            <output expression="&quot;Edad 2: &quot;" newline="True"/>
+            <input variable="iSum"/>
+            <assign variable="iSumaEdad" expression="iSumaEdad + iSum"/>
+            <output expression="&quot;Edad 3: &quot;" newline="True"/>
+            <input variable="iSum"/>
+            <assign variable="iSumaEdad" expression="iSumaEdad + iSum"/>
+            <output expression="&quot;Edad 4: &quot;" newline="True"/>
+            <input variable="iSum"/>
+            <assign variable="iSumaEdad" expression="iSumaEdad + iSum"/>
+            <output expression="&quot;Edad 5: &quot;" newline="True"/>
+            <input variable="iSum"/>
+            <assign variable="iSumaEdad" expression="iSumaEdad + iSum"/>
+            <declare name="dMedia" type="Real" array="False" size=""/>
+            <assign variable="dMedia" expression="iSumaEdad/5"/>
+            <output expression="&quot;La suma es = &quot;" newline="False"/>
+            <output expression="iSumaEdad" newline="True"/>
+            <output expression="&quot;La media es = &quot;" newline="False"/>
+            <output expression="dMedia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

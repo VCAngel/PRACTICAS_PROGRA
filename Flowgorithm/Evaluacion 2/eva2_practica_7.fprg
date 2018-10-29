@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-19 09:31:34 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xOTswOToyNjowNyBhLiBtLjsyOTQ5"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMC0xOTswOTozMTozNCBhLiBtLjsxOzMwNTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iTemp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Temperatura (&#186;C): &quot;" newline="True"/>
+            <input variable="iTemp"/>
+            <if expression="iTemp &lt; 0">
+                <then>
+                    <output expression="&quot;Freezing Cold Weather&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="iTemp &gt;= 0 &amp;&amp; iTemp &lt; 10">
+                        <then>
+                            <output expression="&quot;Very Cold Weather&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="iTemp &gt;= 10 &amp;&amp; iTemp &lt; 20">
+                                <then>
+                                    <output expression="&quot;Cold Weather&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="iTemp &gt;= 20 &amp;&amp; iTemp &lt; 30">
+                                        <then>
+                                            <output expression="&quot;Normal in Temperature&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="iTemp &gt;= 30 &amp;&amp; iTemp &lt; 40">
+                                                <then>
+                                                    <output expression="&quot;It's Hot&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="iTemp &gt;= 40">
+                                                        <then>
+                                                            <output expression="&quot;It's Very Hot!&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

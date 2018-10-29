@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-28 08:33:58 p. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA4OjI5OjAxIHAuIG0uOzMxMjU="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTEwLTI4OzA4OjMzOjU4IHAuIG0uOzI7MzI0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iSuma, i, iSumInput" type="Integer" array="False" size=""/>
+            <assign variable="iSuma" expression="0"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;Edad &quot;" newline="False"/>
+                <output expression="i" newline="False"/>
+                <output expression="&quot;: &quot;" newline="True"/>
+                <input variable="iSumInput"/>
+                <assign variable="iSuma" expression="iSuma + iSumInput"/>
+            </for>
+            <declare name="dMedia" type="Real" array="False" size=""/>
+            <assign variable="dMedia" expression="iSuma/5"/>
+            <output expression="&quot;La media es: &quot;" newline="False"/>
+            <output expression="dMedia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
