@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-08 12:29:42 a. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA4OzEyOjI1OjU2IGEuIG0uOzMxMTA="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA4OzEyOjI5OjQyIGEuIG0uOzE7MzIxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iMat, iFis, iQui" type="Integer" array="False" size=""/>
+            <output expression="&quot;Calificacion en Matematicas: &quot;" newline="True"/>
+            <input variable="iMat"/>
+            <output expression="&quot;Calificacion en Fisica: &quot;" newline="True"/>
+            <input variable="iFis"/>
+            <output expression="&quot;Calificacion en Quimica: &quot;" newline="True"/>
+            <input variable="iQui"/>
+            <declare name="iSumTres" type="Integer" array="False" size=""/>
+            <assign variable="iSumTres" expression="iMat + iFis + iQui"/>
+            <if expression="(((iMat &gt;= 65) &amp;&amp; (iFis &gt;= 55) &amp;&amp; (iQui &gt;= 50)) &amp;&amp; (iSumTres &gt;= 180)) || (iMat &gt;= 65) &amp;&amp; (iSumTres &gt;= 140)">
+                <then>
+                    <output expression="&quot;El candidato es elegible para el curso&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El candidato no es elegible para el curso&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

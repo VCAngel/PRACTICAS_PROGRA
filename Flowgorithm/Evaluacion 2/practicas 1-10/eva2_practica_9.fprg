@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-08 12:24:41 a. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA4OzEyOjEyOjQzIGEuIG0uOzMxMDI="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA4OzEyOjI0OjQxIGEuIG0uOzE7MzIxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iA, iB, iC" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ax^2 + Bx + C = 0&quot;" newline="True"/>
+            <output expression="&quot;A = &quot;" newline="False"/>
+            <input variable="iA"/>
+            <output expression="&quot;B = &quot;" newline="False"/>
+            <input variable="iB"/>
+            <output expression="&quot;C = &quot;" newline="False"/>
+            <input variable="iC"/>
+            <output expression="iA" newline="False"/>
+            <output expression="&quot;x^2 + &quot;" newline="False"/>
+            <output expression="iB" newline="False"/>
+            <output expression="&quot;x + &quot;" newline="False"/>
+            <output expression="iC" newline="False"/>
+            <output expression="&quot; = 0&quot;" newline="True"/>
+            <declare name="dRaiz, dDisc, dX1, dX2" type="Real" array="False" size=""/>
+            <assign variable="dRaiz" expression="(iB^2)-(4*iA*iC)"/>
+            <assign variable="dDisc" expression="sqrt(dRaiz)"/>
+            <assign variable="dX1" expression="(-iB + dDisc)/(2 * iA)"/>
+            <assign variable="dX2" expression="(-iB - dDisc)/(2 * iA)"/>
+            <if expression="dRaiz == 0">
+                <then>
+                    <output expression="&quot;Es un Trinomio Cuadrado Perfecto&quot;" newline="True"/>
+                    <output expression="&quot;Sus raices son: &quot;" newline="False"/>
+                    <output expression="&quot;x1 = &quot;" newline="False"/>
+                    <output expression="dX1" newline="False"/>
+                    <output expression="&quot;, x2 = &quot;" newline="False"/>
+                    <output expression="dX2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="dRaiz &gt; 0">
+                        <then>
+                            <output expression="&quot;Es otro tipo de Trinomio&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;No se puede resolver&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

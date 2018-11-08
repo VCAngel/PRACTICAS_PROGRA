@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-07 11:40:00 p. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA3OzExOjM0OjM1IHAuIG0uOzMxMjA="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA3OzExOjQwOjAwIHAuIG0uOzE7MzIxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, iWhile" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="i" newline="False"/>
+                <output expression="&quot; - &quot;" newline="False"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <assign variable="iWhile" expression="1"/>
+            <while expression="iWhile &lt;= 10">
+                <output expression="iWhile" newline="False"/>
+                <output expression="&quot; + &quot;" newline="False"/>
+                <assign variable="iWhile" expression="iWhile + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
