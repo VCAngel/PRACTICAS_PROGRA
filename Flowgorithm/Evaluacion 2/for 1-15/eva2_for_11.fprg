@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-09 01:05:04 a. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzAxOjAxOjQxIGEuIG0uOzMwOTc="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzAxOjA1OjA0IGEuIG0uOzI7MzIwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iNum, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce un numero entero: &quot;" newline="False"/>
+            <input variable="iNum"/>
+            <for variable="i" start="1" end="100" direction="inc" step="1">
+                <declare name="iMod" type="Integer" array="False" size=""/>
+                <assign variable="iMod" expression="i % iNum"/>
+                <if expression="iMod != 0">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-09 12:04:40 a. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA4OzExOjUyOjMyIHAuIG0uOzMxMTg="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzEyOjA0OjQwIGEuIG0uOzE7MzIwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Cuantas veces quieres imprimir tu nombre?&quot;" newline="True"/>
+            <declare name="iNum, i" type="Integer" array="False" size=""/>
+            <input variable="iNum"/>
+            <for variable="i" start="1" end="iNum" direction="inc" step="1">
+                <output expression="&quot;Angel Vargas Casavantes&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

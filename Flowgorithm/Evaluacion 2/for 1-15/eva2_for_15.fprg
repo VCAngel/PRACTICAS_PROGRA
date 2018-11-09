@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-09 02:00:49 a. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzAxOjQ3OjU3IGEuIG0uOzMxMTQ="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzAyOjAwOjQ5IGEuIG0uOzM7MzIxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Introduce un numero:&quot;" newline="True"/>
+            <declare name="iNum, iCont, i" type="Integer" array="False" size=""/>
+            <input variable="iNum"/>
+            <assign variable="iCont" expression="0"/>
+            <for variable="i" start="1" end="iNum" direction="inc" step="1">
+                <declare name="iMod" type="Integer" array="False" size=""/>
+                <assign variable="iMod" expression="iNum % i"/>
+                <if expression="iMod == 0">
+                    <then>
+                        <assign variable="iCont" expression="iCont + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="iCont &lt;= 2">
+                <then>
+                    <output expression="&quot;Es primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No es Primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

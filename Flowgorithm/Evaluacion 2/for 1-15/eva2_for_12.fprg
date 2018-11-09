@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-09 01:09:16 a. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzAxOjA4OjM4IGEuIG0uOzMxMTA="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzAxOjA5OjA1IGEuIG0uOzE7VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzEyOjU2OjUzIGEuIG0uO2V2YTJfZm9yXzEwLmZwcmc7NzkwMA=="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzAxOjA5OjE2IGEuIG0uOzI7MzIxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iAst, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Numero de asteriscos = &quot;" newline="False"/>
+            <input variable="iAst"/>
+            <for variable="i" start="1" end="iAst" direction="inc" step="1">
+                <output expression="&quot;*&quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

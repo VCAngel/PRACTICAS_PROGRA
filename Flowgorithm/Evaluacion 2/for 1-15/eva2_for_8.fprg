@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vargas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-09 12:44:19 a. m."/>
+        <attribute name="created" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzEyOjM3OjA1IGEuIG0uOzMxMDg="/>
+        <attribute name="edited" value="VmFyZ2FzO0RFU0tUT1AtUVBQMEUyMDsyMDE4LTExLTA5OzEyOjQ0OjE5IGEuIG0uOzM7MzIyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="20" direction="inc" step="1">
+                <declare name="iNumAlea" type="Integer" array="False" size=""/>
+                <assign variable="iNumAlea" expression="random(101)"/>
+                <output expression="iNumAlea" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
