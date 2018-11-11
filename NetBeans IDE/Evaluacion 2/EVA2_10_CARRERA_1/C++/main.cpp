@@ -12,22 +12,27 @@ int toInt (string);
 double toDouble (string);
 
 int main() {
-    cout << "INTRODUCE EL AÑO" << endl;
-    int iAnnio;
+    bool materiasTerminadas;
     
-    cin >> iAnnio;
-    if (iAnnio % 4 == 0) {
-        if (iAnnio % 100 == 0) {
-            if (iAnnio % 400 == 0) {
-                cout << "ES BISIESTO" << endl;
+    materiasTerminadas = true;
+    if (materiasTerminadas == true) {
+        bool servicioLiberado;
+        
+        servicioLiberado = true;
+        if (servicioLiberado == true) {
+            bool residenciasLiberadas;
+            
+            residenciasLiberadas = true;
+            if (residenciasLiberadas == true) {
+                cout << "TE PUEDES TITULAR!" << endl;
             } else {
-                cout << "NO ES BISIESTO" << endl;
+                cout << "NO TE PUEDES TITULAR" << endl;
             }
         } else {
-            cout << "ES BISIESTO" << endl;
+            cout << "NO TE PUEDES TITULAR" << endl;
         }
     } else {
-        cout << "NO ES BISIESTO" << endl;
+        cout << "NO TE PUEDES TITULAR" << endl;
     }
     return 0;
 }

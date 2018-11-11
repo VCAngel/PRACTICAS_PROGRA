@@ -1,9 +1,12 @@
-print("Ingrese un annio")
+print("INTRODUCE EL AÑO")
 iAnnio = int(input())
-iResi = iAnnio % 4
-iResi100 = iAnnio % 100
-iResi400 = iAnnio % 400
-if (iResi == 0 and (iResi100 != 0 or iResi400 == 0)):
-	print("BISIESTO")
+if iAnnio % 4 == 0:
+    if iAnnio % 100 == 0:
+        if iAnnio % 400 == 0:
+            print("ES BISIESTO")
+        else:
+            print("NO ES BISIESTO")
+    else:
+        print("ES BISIESTO")
 else:
-	print("NO ES BISIESTO")
+    print("NO ES BISIESTO")

@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Vargas
+ * @author Vargas Casavantes Ángel- 18550627
  */
 public class Principal {
 
@@ -19,25 +19,19 @@ public class Principal {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        int iAnnio, iMod, iMod2, iMod3;
         
-        int iAnnio;
-        System.out.println("INGRESE EL AÑO");
+        System.out.println("Introduce un año: ");
         iAnnio = input.nextInt();
+        iMod = iAnnio % 4;
+        iMod2 = iAnnio % 100;
+        iMod3 = iAnnio % 400;
         
-        if((iAnnio % 4) == 0){
-            if((iAnnio % 4) == 100){
-                if((iAnnio % 4) == 400){
-                    System.out.println("ES BISIESTO");
-                }else{
-                    System.out.println("NO ES BISIESTO");
-                }
-            }else{
-                System.out.println("ES BISIESTO");
-            }
-        }else{
+        if((iMod == 0) && ((iMod2 != 0) || (iMod3 == 0)))
+            System.out.println("ES BISIESTO");
+        else
             System.out.println("NO ES BISIESTO");
-        }
+            
     }
-    
     
 }
