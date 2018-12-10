@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-22 08:23:32 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMS0yMjswODoxMTo0MSBhLiBtLjsyOTM1"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDM7MjAxOC0xMS0yMjswODoyMzozMiBhLiBtLjsxOzMwNDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="printMsg(&quot;&#193;ngel&quot;)"/>
+        </body>
+    </function>
+    <function name="printMsg" type="None" variable="">
+        <parameters>
+            <parameter name="Msg" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;Hola &quot;" newline="False"/>
+            <output expression="Msg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
